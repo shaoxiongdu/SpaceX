@@ -1,0 +1,136 @@
+2023-06-14 16:29:04.221 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-06-14 16:29:04.243 [restartedMain] INFO  c.s.S.SpringBootWebStarterApplication - Starting SpringBootWebStarterApplication using Java 17.0.7 with PID 93943 (/Users/dushaoxiong/code/Idea/SpaceX/target/classes started by dushaoxiong in /Users/dushaoxiong/code/Idea/SpaceX)
+2023-06-14 16:29:04.243 [restartedMain] INFO  c.s.S.SpringBootWebStarterApplication - The following 1 profile is active: "HWCloud"
+2023-06-14 16:29:04.266 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-14 16:29:04.267 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-14 16:29:04.669 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-14 16:29:04.671 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-14 16:29:04.687 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-06-14 16:29:05.033 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2023-06-14 16:29:05.038 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2023-06-14 16:29:05.039 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-14 16:29:05.039 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-14 16:29:05.070 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2023-06-14 16:29:05.070 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 803 ms
+2023-06-14 16:29:05.074 [restartedMain] INFO  c.s.SpaceX.config.CorsConfig - cors config enable
+2023-06-14 16:29:05.868 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-06-14 16:29:05.880 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2023-06-14 16:29:05.889 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path '/api'
+2023-06-14 16:29:05.896 [restartedMain] INFO  c.s.S.SpringBootWebStarterApplication - Started SpringBootWebStarterApplication in 1.826 seconds (process running for 2.277)
+2023-06-14 16:29:07.266 [http-nio-80-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-14 16:29:07.266 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-06-14 16:29:07.267 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-06-14 16:29:07.581 [http-nio-80-exec-3] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 152 ms
+2023-06-14 16:29:32.300 [http-nio-80-exec-4] WARN  c.b.m.c.t.support.ReflectLambdaMeta - Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @5ffead27
+2023-06-14 16:29:32.307 [http-nio-80-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-06-14 16:29:32.597 [http-nio-80-exec-4] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2cb3564c
+2023-06-14 16:29:32.598 [http-nio-80-exec-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-06-14 16:29:32.650 [http-nio-80-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.BadSqlGrammarException: <EOL>### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'deleted' in 'where clause'<EOL>### The error may exist in cn/shoxiongdu/SpaceX/mapper/UserMapper.java (best guess)<EOL>### The error may involve defaultParameterMap<EOL>### The error occurred while setting parameters<EOL>### SQL: SELECT COUNT( * ) AS total FROM user   WHERE  deleted=0  AND (username = ?)<EOL>### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'deleted' in 'where clause'<EOL>; bad SQL grammar []]
+2023-06-14 16:30:40.962 [http-nio-80-exec-7] INFO  c.s.S.config.MyBatisPlusFullConfig - start insert fill ....
+2023-06-14 16:30:55.684 [http-nio-80-exec-8] INFO  c.s.S.config.MyBatisPlusFullConfig - start update fill ....
+2023-06-14 16:31:20.485 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-06-14 16:31:20.617 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-06-14 16:31:33.764 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [cn.shoxiongdu.SpaceX.SpringBootWebStarterApplicationTests]: SpringBootWebStarterApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-06-14 16:31:33.820 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration cn.shoxiongdu.SpaceX.SpringBootWebStarterApplication for test class cn.shoxiongdu.SpaceX.SpringBootWebStarterApplicationTests
+2023-06-14 16:31:47.822 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [cn.shoxiongdu.SpaceX.SpringBootWebStarterApplicationTests]: SpringBootWebStarterApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-06-14 16:31:47.885 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration cn.shoxiongdu.SpaceX.SpringBootWebStarterApplication for test class cn.shoxiongdu.SpaceX.SpringBootWebStarterApplicationTests
+2023-06-14 16:31:48.074 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-06-14 16:31:48.092 [main] INFO  c.s.S.SpringBootWebStarterApplicationTests - Starting SpringBootWebStarterApplicationTests using Java 17.0.6 with PID 94683 (started by dushaoxiong in /Users/dushaoxiong/code/Idea/SpaceX)
+2023-06-14 16:31:48.093 [main] INFO  c.s.S.SpringBootWebStarterApplicationTests - The following 1 profile is active: "HWCloud"
+2023-06-14 16:31:48.460 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-14 16:31:48.462 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-14 16:31:48.485 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-06-14 16:31:49.050 [main] INFO  c.s.SpaceX.config.CorsConfig - cors config enable
+2023-06-14 16:31:49.854 [main] INFO  c.s.S.SpringBootWebStarterApplicationTests - Started SpringBootWebStarterApplicationTests in 1.903 seconds (process running for 2.492)
+2023-06-14 16:31:50.350 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [cn.shoxiongdu.SpaceX.mapper.UserMapperTest]: UserMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-06-14 16:31:50.355 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration cn.shoxiongdu.SpaceX.SpringBootWebStarterApplication for test class cn.shoxiongdu.SpaceX.mapper.UserMapperTest
+2023-06-14 16:31:50.392 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-06-14 16:31:50.739 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@244c0fbe
+2023-06-14 16:31:50.740 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-06-14 16:31:50.822 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-06-14 16:31:50.839 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-06-14 16:32:54.869 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [cn.shoxiongdu.SpaceX.SpringBootWebStarterApplicationTests]: SpringBootWebStarterApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-06-14 16:32:54.922 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration cn.shoxiongdu.SpaceX.SpringBootWebStarterApplication for test class cn.shoxiongdu.SpaceX.SpringBootWebStarterApplicationTests
+2023-06-14 16:32:55.100 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-06-14 16:32:55.114 [main] INFO  c.s.S.SpringBootWebStarterApplicationTests - Starting SpringBootWebStarterApplicationTests using Java 17.0.6 with PID 95017 (started by dushaoxiong in /Users/dushaoxiong/code/Idea/SpaceX)
+2023-06-14 16:32:55.114 [main] INFO  c.s.S.SpringBootWebStarterApplicationTests - The following 1 profile is active: "HWCloud"
+2023-06-14 16:32:55.508 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-14 16:32:55.510 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-14 16:32:55.527 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-06-14 16:32:55.995 [main] INFO  c.s.SpaceX.config.CorsConfig - cors config enable
+2023-06-14 16:32:56.834 [main] INFO  c.s.S.SpringBootWebStarterApplicationTests - Started SpringBootWebStarterApplicationTests in 1.85 seconds (process running for 2.438)
+2023-06-14 16:32:57.363 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [cn.shoxiongdu.SpaceX.mapper.UserMapperTest]: UserMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-06-14 16:32:57.370 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration cn.shoxiongdu.SpaceX.SpringBootWebStarterApplication for test class cn.shoxiongdu.SpaceX.mapper.UserMapperTest
+2023-06-14 16:32:57.414 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-06-14 16:32:57.745 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5345552f
+2023-06-14 16:32:57.746 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-06-14 16:32:57.820 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-06-14 16:32:57.834 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-06-14 16:34:28.863 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [cn.shoxiongdu.SpaceX.SpringBootWebStarterApplicationTests]: SpringBootWebStarterApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-06-14 16:34:28.915 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration cn.shoxiongdu.SpaceX.SpringBootWebStarterApplication for test class cn.shoxiongdu.SpaceX.SpringBootWebStarterApplicationTests
+2023-06-14 16:34:29.088 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-06-14 16:34:29.101 [main] INFO  c.s.S.SpringBootWebStarterApplicationTests - Starting SpringBootWebStarterApplicationTests using Java 17.0.6 with PID 95406 (started by dushaoxiong in /Users/dushaoxiong/code/Idea/SpaceX)
+2023-06-14 16:34:29.102 [main] INFO  c.s.S.SpringBootWebStarterApplicationTests - The following 1 profile is active: "HWCloud"
+2023-06-14 16:34:29.494 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-14 16:34:29.496 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-14 16:34:29.515 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2023-06-14 16:34:30.108 [main] INFO  c.s.SpaceX.config.CorsConfig - cors config enable
+2023-06-14 16:34:30.877 [main] INFO  c.s.S.SpringBootWebStarterApplicationTests - Started SpringBootWebStarterApplicationTests in 1.904 seconds (process running for 2.485)
+2023-06-14 16:34:31.391 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [cn.shoxiongdu.SpaceX.mapper.UserMapperTest]: UserMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-06-14 16:34:31.395 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration cn.shoxiongdu.SpaceX.SpringBootWebStarterApplication for test class cn.shoxiongdu.SpaceX.mapper.UserMapperTest
+2023-06-14 16:34:31.431 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-06-14 16:34:31.751 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5345552f
+2023-06-14 16:34:31.752 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-06-14 16:34:31.830 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-06-14 16:34:31.845 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-06-14 16:36:49.938 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [cn.shoxiongdu.SpaceX.SpringBootWebStarterApplicationTests]: SpringBootWebStarterApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-06-14 16:36:49.989 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration cn.shoxiongdu.SpaceX.SpringBootWebStarterApplication for test class cn.shoxiongdu.SpaceX.SpringBootWebStarterApplicationTests
+2023-06-14 16:36:50.170 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-06-14 16:36:50.186 [main] INFO  c.s.S.SpringBootWebStarterApplicationTests - Starting SpringBootWebStarterApplicationTests using Java 17.0.6 with PID 96336 (started by dushaoxiong in /Users/dushaoxiong/code/Idea/SpaceX)
+2023-06-14 16:36:50.186 [main] INFO  c.s.S.SpringBootWebStarterApplicationTests - The following 1 profile is active: "HWCloud"
+2023-06-14 16:36:50.538 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-14 16:36:50.540 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-14 16:36:50.561 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2023-06-14 16:36:51.137 [main] INFO  c.s.SpaceX.config.CorsConfig - cors config enable
+2023-06-14 16:36:51.935 [main] INFO  c.s.S.SpringBootWebStarterApplicationTests - Started SpringBootWebStarterApplicationTests in 1.884 seconds (process running for 2.451)
+2023-06-14 16:36:52.449 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [cn.shoxiongdu.SpaceX.mapper.UserMapperTest]: UserMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-06-14 16:36:52.453 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration cn.shoxiongdu.SpaceX.SpringBootWebStarterApplication for test class cn.shoxiongdu.SpaceX.mapper.UserMapperTest
+2023-06-14 16:36:52.487 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-06-14 16:36:52.807 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5694f6a0
+2023-06-14 16:36:52.808 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-06-14 16:36:52.902 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-06-14 16:36:52.918 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-06-14 16:37:22.355 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [cn.shoxiongdu.SpaceX.SpringBootWebStarterApplicationTests]: SpringBootWebStarterApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-06-14 16:37:22.405 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration cn.shoxiongdu.SpaceX.SpringBootWebStarterApplication for test class cn.shoxiongdu.SpaceX.SpringBootWebStarterApplicationTests
+2023-06-14 16:37:22.574 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-06-14 16:37:22.589 [main] INFO  c.s.S.SpringBootWebStarterApplicationTests - Starting SpringBootWebStarterApplicationTests using Java 17.0.6 with PID 96566 (started by dushaoxiong in /Users/dushaoxiong/code/Idea/SpaceX)
+2023-06-14 16:37:22.589 [main] INFO  c.s.S.SpringBootWebStarterApplicationTests - The following 1 profile is active: "HWCloud"
+2023-06-14 16:37:22.942 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-14 16:37:22.943 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-14 16:37:22.963 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-06-14 16:37:23.373 [main] INFO  c.s.SpaceX.config.CorsConfig - cors config enable
+2023-06-14 16:37:24.261 [main] INFO  c.s.S.SpringBootWebStarterApplicationTests - Started SpringBootWebStarterApplicationTests in 1.798 seconds (process running for 2.38)
+2023-06-14 16:37:24.754 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [cn.shoxiongdu.SpaceX.mapper.UserMapperTest]: UserMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-06-14 16:37:24.759 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration cn.shoxiongdu.SpaceX.SpringBootWebStarterApplication for test class cn.shoxiongdu.SpaceX.mapper.UserMapperTest
+2023-06-14 16:37:24.796 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-06-14 16:37:25.142 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@68aa1164
+2023-06-14 16:37:25.143 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-06-14 16:37:25.221 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-06-14 16:37:25.236 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-06-14 16:37:55.137 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [cn.shoxiongdu.SpaceX.SpringBootWebStarterApplicationTests]: SpringBootWebStarterApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-06-14 16:37:55.190 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration cn.shoxiongdu.SpaceX.SpringBootWebStarterApplication for test class cn.shoxiongdu.SpaceX.SpringBootWebStarterApplicationTests
+2023-06-14 16:37:55.368 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-06-14 16:37:55.383 [main] INFO  c.s.S.SpringBootWebStarterApplicationTests - Starting SpringBootWebStarterApplicationTests using Java 17.0.6 with PID 96794 (started by dushaoxiong in /Users/dushaoxiong/code/Idea/SpaceX)
+2023-06-14 16:37:55.383 [main] INFO  c.s.S.SpringBootWebStarterApplicationTests - The following 1 profile is active: "HWCloud"
+2023-06-14 16:37:55.766 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-14 16:37:55.768 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-14 16:37:55.784 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-06-14 16:37:56.200 [main] INFO  c.s.SpaceX.config.CorsConfig - cors config enable
+2023-06-14 16:37:56.990 [main] INFO  c.s.S.SpringBootWebStarterApplicationTests - Started SpringBootWebStarterApplicationTests in 1.74 seconds (process running for 2.316)
+2023-06-14 16:37:57.476 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [cn.shoxiongdu.SpaceX.mapper.UserMapperTest]: UserMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-06-14 16:37:57.479 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration cn.shoxiongdu.SpaceX.SpringBootWebStarterApplication for test class cn.shoxiongdu.SpaceX.mapper.UserMapperTest
+2023-06-14 16:37:57.510 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-06-14 16:37:57.799 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25fc2b8f
+2023-06-14 16:37:57.800 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-06-14 16:37:57.875 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-06-14 16:37:57.888 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
